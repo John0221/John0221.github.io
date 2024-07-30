@@ -559,3 +559,19 @@ body {
     }
   }
 }
+
+.home-page {
+  margin-top: 50px;
+  @include clearfix;
+  margin-inline: auto;
+  padding-inline: 1em;
+  -webkit-animation: $intro-transition;
+  animation: $intro-transition;
+  max-width: 100%;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+
+  @include breakpoint($x-large) {
+    max-width: $max-width;
+  }
+}
